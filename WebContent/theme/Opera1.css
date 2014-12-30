@@ -1,0 +1,135 @@
+@CHARSET "ISO-8859-1" ;
+
+body,table{
+	font-family: verdana, arial, helvetica;
+	font-weight: 400;
+	font-opersize: 10pt;
+}
+
+
+.title {
+	width: 95%;
+	background-color:#22316C;
+	color: white;
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: 13pt;
+	font-weight: bold;
+	height: auto;
+	border-style: solid;
+	border-width: 1pt;
+	border-color: #000000;
+	vertical-align: middle;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px
+}
+
+.block{
+	width: 95%;
+	padding: 5px;
+	background-color: #FFFFFF;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	border-style: solid;
+	border-width: 1pt;
+	border-top-color: #FFFFFF
+}
+
+.label {
+	font-weight: bold;
+	background-color: silver;
+	padding: 5px;
+	color:#000000;
+	cursor: pointer;
+}
+
+.label1 {
+	font-weight: bold;
+	background-color: #22316C;
+	padding: 2px;
+	color:white;
+	cursor: pointer;
+} 
+
+.label4 {
+	font-weight: bold;
+	background-color: #22316C;
+	padding: 2px;
+	color:black;
+	cursor: pointer;
+} 
+
+.label2 {
+	font-weight: bold;
+	background-color:  #7596c6;
+	color:white;
+	cursor: pointer;
+} 
+
+.label3 {
+	font-weight: bold;
+	background-color:  #cccfff;
+	padding: 2px;
+	color:white;
+	cursor: pointer;
+}
+
+.label5 {
+	font-weight: bold;
+	background-color:  #cccfff;
+	
+	color:black;
+	cursor: pointer;
+}
+
+.label6 {
+	
+	background-color:  #7596c6;
+	color:white;
+	cursor: pointer;
+} 
+
+
+.content {
+	background: #FFFFFF;
+	padding: 10px;
+}
+
+.label,.content {
+	width: 98%;
+}
+
+span {
+	color: #000000;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: bold;
+}
+
+.TitleBar {
+	vertical-align: top;
+	margin: 2px 2px 2px 2px;
+	z-index: 10;
+	background-color: #7596c6;
+	cursor: default;
+    color: white;
+	overflow: hidden;
+    font-size: 11pt;
+	border-color: ThreeDHighlight ThreeDShadow ThreeDShadow ThreeDHighlight;
+	vertical-align: middle;
+}
+
+.CalendarEntry {
+	vertical-align: top;
+	
+	z-index: 10;
+	background-color: #ccffcc;
+	cursor: default;
+    color: black;
+	overflow: hidden;
+    font-size: 8pt;
+	border-color: ThreeDHighlight ThreeDShadow ThreeDShadow ThreeDHighlight;
+	vertical-align: middle;
+}

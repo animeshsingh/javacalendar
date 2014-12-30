@@ -1,0 +1,101 @@
+New York, NY
+Los Angeles, CA
+Chicago, IL
+Houston, TX
+Phoenix, AZ
+Philadelphia, PA
+San Antonio, TX
+San Diego, CA
+Dallas, TX
+San Jose, CA
+Detroit, MI
+Jacksonville, FL
+Indianapolis, IN
+San Francisco, CA
+Columbus, OH
+Austin, TX
+Memphis, TN
+Fort Worth, TX
+Baltimore, MD
+Charlotte, NC
+El Paso, TX
+Boston, MA
+Seattle, WA
+Washington, DC
+Milwaukee, WI
+Denver, CO
+Las Vegas, NV
+Nashville-Davidson, TN
+Oklahoma City, OK
+Portland, OR
+Tucson, AZ
+Albuquerque, NM
+Atlanta, GA
+Long Beach, CA
+Fresno, CA
+Sacramento, CA
+Mesa, AZ
+Kansas City, MO
+Cleveland, OH
+Virginia Beach, VA
+Omaha, NE
+Miami, FL
+Oakland, CA
+Tulsa, OK
+Honolulu, HI
+Minneapolis, MN
+Colorado Springs, CO
+Arlington, TX
+Wichita, KS
+Raleigh, NC
+St. Louis, MO
+Santa Ana, CA
+Anaheim, CA
+Tampa, FL
+Cincinnati, OH
+Pittsburgh, PA
+Bakersfield, CA
+Aurora, CO
+Toledo, OH
+Riverside, CA
+Stockton, CA
+Corpus Christi, TX
+Newark, NJ
+Anchorage, AK
+Buffalo, NY
+St. Paul, MN
+Lexington-Fayette, KY
+Plano, TX
+Fort Wayne, IN
+St. Petersburg, FL
+Glendale, AZ
+Jersey City, NJ
+Lincoln, NE
+Henderson, NV
+Chandler, AZ
+Greensboro, NC
+Scottsdale, AZ
+Baton Rouge, LA
+Birmingham, AL
+Norfolk, VA
+Madison, WI
+New Orleans, LA
+North Hempstead, NY
+Chesapeake, VA
+Orlando, FL
+Garland, TX
+Hialeah, FL
+Laredo, TX
+Chula Vista, CA
+Lubbock, TX
+Reno, NV
+Akron, OH
+Durham, NC
+Rochester, NY
+Modesto, CA
+Montgomery, AL
+Fremont, CA
+Shreveport, LA
+Arlington, VA
+Glendale, CA
+San Bernardino, CA

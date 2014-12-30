@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- © Copyright IBM Corporation 2010  All Rights Reserved. -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta name="GENERATOR" content="IBM Software Development Platform" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="DC.Rights" content="© Copyright IBM Corporation 2010  All Rights Reserved." />
+<link href="theme/Opera.css" rel="stylesheet" type="text/css" />
+<link href="theme/Opera1.css" rel="stylesheet" type="text/css" />
+<title>IBM Prototype</title>
+
+<script type="text/javascript" src="dojoAjax/dojo.js"></script>
+      <script type="text/javascript">
+      dojo.require("dojo.widget.SlideShow");
+      
+      
+            var xhr;
+
+
+            function handleCheckEvent(str) {
+                xhr = createXHR();
+                xhr.onreadystatechange=processSuggestions;
+                xhr.open("GET","ScheduleServlet?str=" + str,true);
+                xhr.send(null);
+            }
+
+
+            function processSuggestions() {
+                if (xhr.readyState == 4) {
+                    if (xhr.status == 200) {
+                        var data = xhr.responseText;
+                        document.getElementById("flightDetails").innerHTML=data; 
+
+                    } else {
+                        document.getElementById("flightDetails").innerHTML = "Error";
+                    }
+                }
+            }
+
+
+
+            function createXHR() {
+                var xhr;
+                try {
+                    xhr = new ActiveXObject("Msxml2.XMLHTTP");
+                } catch (e) {
+                    try {
+                        xhr = new ActiveXObject("Microsoft.XMLHTTP");
+                    } catch (E) {
+                        xhr = false;
+                    }
+                }
+
+                if (!xhr && typeof XMLHttpRequest != 'undefined') {
+                      xhr = new XMLHttpRequest();
+                }
+                return xhr;
+            }
+      </script>
+      <style>
+      // Don't show Dojo slideshow play/pause button
+      input[dojoAttachPoint=startStopButton] { display: none; }
+      input { display: none; }
+      </style>
+    </head>
+    <body onload="handleCheckEvent('showConfirmation');">
+<table width="350px" position="relative" cellspacing=1 >
+<tr><td  width="350px" colspan="4" height="30px" class="label1"><b>Your Flights have been booked.</b></td></tr>
+
+<tr>
+<td width="50px" height="30px" class="label2"><b>Flight No.</b></td>
+
+<td>
+<table  cellspacing=0 >
+<tr><td colspan="2" width="150px" height="30px" class="label2"><b>Departing</b></td></tr>
+<tr><td width="100px" height="30px" class="label3"><b>City</b></td>
+    <td width="50px" height="30px" class="label3"><b>Time<br>(EST)</b></td>
+</tr>
+</table>
+</td>
+<td>
+<table cellspacing=0>
+<tr><td colspan="2" width="150px" height="30px" class="label2"><b>Arriving</b></td></tr>
+<tr><td width="100px" height="30px" class="label3"><b>City</b></td>
+    <td width="50px" height="30px" class="label3"><b>Time<br>(EST)</b></td>
+</tr>
+</table>
+</td>
+
+</tr>
+</table>
+<div id="flightDetails" style="height: 120px; position: relative;">
+<b><br><br><font color="red"/>&nbsp;&nbsp;&nbsp;&nbsp;Booking Your Flights.....</b>
+</div>
+
+<table><tr><td class="label2" width="350" height="215" align="left"><img dojoType="SlideShow" 
+        imgUrls="images/airplane6.jpg;images/airplane7.jpg;images/airplane8.jpg" 
+        transitionInterval=500
+        imgWidth=340
+        imgHeight=200
+        delay=800
+        src="images/airplane6.jpg" ></img>
+        </td></tr>
+</table>
+<div style="width: 350px; height: 30px;position: relative;" class="label1"><table>
+<tr><td width="150px">
+<a href="MyCal.jsp" style="font-size: 8pt;text-decoration:underline; color:#f2f2f2"><b>My Calendar</b></a>
+</td></tr>
+</table>
+</div> 
+  </body>
+</html>
